@@ -20,6 +20,8 @@
     // Do any additional setup after loading the view.
     
     [FMTestClass method1];
+    
+    [FMTestClass method2];
 }
 
 

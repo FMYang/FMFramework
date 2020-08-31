@@ -14,4 +14,8 @@
     NSLog(@"method1");
 }
 
++ (void)method2 {
+    NSLog(@"new method method2");
+}
+
 @end

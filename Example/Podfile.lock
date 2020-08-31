@@ -1,5 +1,5 @@
 PODS:
-  - FMFramework (0.0.1)
+  - FMFramework (0.0.2)
 
 DEPENDENCIES:
   - FMFramework (from `../../FMFramework`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../../FMFramework"
 
 SPEC CHECKSUMS:
-  FMFramework: 9063bb284d4d202bfdb256a8d75d99622fff9c5a
+  FMFramework: 2442da6cbff3158fca104cbf724ca56a5db2ed7c
 
-PODFILE CHECKSUM: b49503ea3de1e35b164460ac61c73f438ead87be
+PODFILE CHECKSUM: a5ba2e0bede0d68ba4456d2f13f08f354d3bfb7c
 
 COCOAPODS: 1.8.4

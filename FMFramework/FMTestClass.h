@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)method1;
 
+// version 2
++ (void)method2;
+
 @end
 
 NS_ASSUME_NONNULL_END
