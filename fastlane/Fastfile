@@ -1,3 +1,6 @@
+
+ProjectPath="./FMFramework.podspec"
+
 desc '升级私有库脚本'
 lane :release do |options|
 
@@ -9,9 +12,17 @@ cocoapods(
   podfile: "./Example/Podfile"
 )
 
+# 更新spec版本号
+version_bump_podspec(path: ProjectPath, version_number: tagNum)
+
 git_add(path: ".")
 git_commit(path: ".", message: message)
 push_to_git_remote
+
+if git_tag_exists(tag: tagNum)
+      # 版本存在，删除对应 tag
+      remove_git_tag(tag: tagNum)
+end
 
 add_git_tag(
 	tag: tagNum
@@ -21,4 +32,9 @@ push_git_tags
 
 # pod_lib_lint(allow_warnings: true)
 
+end
+
+lane :updateSpecVersion do |options|
+	tagNum = options[:tag]
+	version_bump_podspec(path: ProjectPath, version_number: tagNum)
 end
