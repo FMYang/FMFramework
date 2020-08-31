@@ -1,6 +1,6 @@
 {
   "name": "FMFramework",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "summary": "FMFramework",
   "description": "FMFramework test.",
   "homepage": "https://github.com/FMYang/FMFramework.git",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/FMYang/FMFramework.git",
-    "tag": "0.0.2"
+    "tag": "0.0.4"
   },
   "platforms": {
     "ios": "10.0"

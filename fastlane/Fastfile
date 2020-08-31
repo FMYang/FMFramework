@@ -2,6 +2,7 @@ desc '升级私有库脚本'
 lane :release do |options|
 
 tagNum = options[:tag]
+message = options[:message]
 
 cocoapods(
   clean_install: true,
@@ -9,7 +10,7 @@ cocoapods(
 )
 
 git_add(path: ".")
-git_commit(path: ".", message: "upgrade repo")
+git_commit(path: ".", message: message)
 push_to_git_remote
 
 add_git_tag(
