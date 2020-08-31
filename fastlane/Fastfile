@@ -1,0 +1,18 @@
+desc '升级私有库脚本'
+lane :release do |options|
+
+tagNum = options[:tag]
+
+git_add(path: ".")
+git_commit(path: ".", message: "upgrade repo")
+push_to_git_remote
+
+add_git_tag(
+	tag: tagNum
+)
+
+push_git_tags
+
+# pod_lib_lint(allow_warnings: true)
+
+end

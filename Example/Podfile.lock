@@ -2,15 +2,21 @@ PODS:
   - FMFramework (0.0.2)
 
 DEPENDENCIES:
-  - FMFramework (from `../../FMFramework`)
+  - FMFramework (from `https://github.com/FMYang/FMFramework.git`, tag `0.0.2`)
 
 EXTERNAL SOURCES:
   FMFramework:
-    :path: "../../FMFramework"
+    :git: https://github.com/FMYang/FMFramework.git
+    :tag: 0.0.2
+
+CHECKOUT OPTIONS:
+  FMFramework:
+    :git: https://github.com/FMYang/FMFramework.git
+    :tag: 0.0.2
 
 SPEC CHECKSUMS:
-  FMFramework: 2442da6cbff3158fca104cbf724ca56a5db2ed7c
+  FMFramework: df5daad00beae48e868823324c9ef49e243b3736
 
-PODFILE CHECKSUM: a5ba2e0bede0d68ba4456d2f13f08f354d3bfb7c
+PODFILE CHECKSUM: 5daede040030e064d02fbb597f2ff20d7e9d1ebd
 
 COCOAPODS: 1.8.4

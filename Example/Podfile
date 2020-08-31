@@ -6,7 +6,7 @@ target 'Example' do
   use_frameworks!
 
   # Pods for Example
-  pod 'FMFramework', :path => '../../FMFramework'
-#  pod 'FMFramework', :git => 'https://github.com/FMYang/FMFramework.git', :tag => '0.0.1'
+#  pod 'FMFramework', :path => '../../FMFramework'
+  pod 'FMFramework', :git => 'https://github.com/FMYang/FMFramework.git', :tag => '0.0.2'/Volumes/yfm的移动硬盘/项目/YTC/project/consumer/YTCConsumerProject/fastlane/Fastfile
 
 end
