@@ -38,6 +38,8 @@ end
 
 lane :DirTest do |options|
 	# `pod repo push fmyang FMFramework.podspec`
+	puts "begin"
 	`cd ..`
 	`pod repo push fmyang FMFramework.podspec`
+	puts "end"
 end
