@@ -17,7 +17,7 @@ push_to_git_remote
 
 if git_tag_exists(tag: tagNum)
       # 版本存在，删除对应 tag
-      remove_git_tag(tag: tagNum) # plugin
+      git_remove_tag(tag: tagNum) # plugin
 end
 
 # 打tag
