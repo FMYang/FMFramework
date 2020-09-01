@@ -30,16 +30,14 @@ push_git_tags
 # pod_lib_lint(allow_warnings: true)
 
 puts "begin"
-`cd ..`
-`pod repo push fmyang FMFramework.podspec`
+'cd ..'
+'pod repo push fmyang FMFramework.podspec'
 puts "end"
 
 end
 
-lane :DirTest do |options|
-	# `pod repo push fmyang FMFramework.podspec`
-	puts "begin"
-	`cd ..`
-	`pod repo push fmyang FMFramework.podspec`
-	puts "end"
+lane :DirTest do
+	#system 'cd ..'
+	system 'ls'
+	#system ''
 end
