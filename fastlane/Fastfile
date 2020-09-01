@@ -30,8 +30,8 @@ push_git_tags
 # pod_lib_lint(allow_warnings: true)
 
 puts "begin"
-'cd ..'
-'pod repo push fmyang FMFramework.podspec'
+system 'cd ..'
+system 'pod repo push fmyang FMFramework.podspec'
 puts "end"
 
 end
