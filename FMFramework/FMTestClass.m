@@ -38,4 +38,8 @@
     NSLog(@"new method method8");
 }
 
++ (void)method17 {
+    NSLog(@"new method method17");
+}
+
 @end
