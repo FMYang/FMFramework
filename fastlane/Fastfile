@@ -29,7 +29,8 @@ push_git_tags
 
 # pod_lib_lint(allow_warnings: true)
 
-system 'pod repo push fmyang /Users/fmy/zy/FMPodSpec/FMFramework/FMFramework.podspec'
+system 'cd /Users/fmy/zy/FMPodSpec/FMFramework/'
+system 'pod repo push fmyang FMFramework.podspec'
 
 end
 
