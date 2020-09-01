@@ -17,7 +17,7 @@ push_to_git_remote
 
 if git_tag_exists(tag: tagNum)
       # 版本已经存在
-      raise "版本已经存在，请检查版本号，修改后重新提交" 
+      raise "版本#{tagNum}已经存在，请检查版本号，修改后重新提交" 
 end
 
 # 打tag
