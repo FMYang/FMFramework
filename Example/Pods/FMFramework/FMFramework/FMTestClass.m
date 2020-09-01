@@ -34,4 +34,12 @@
     NSLog(@"new method method7");
 }
 
++ (void)method8 {
+    NSLog(@"new method method8");
+}
+
++ (void)method17 {
+    NSLog(@"new method method17");
+}
+
 @end

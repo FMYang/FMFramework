@@ -33,6 +33,6 @@ push_git_tags
 # 返回上一个目录
 Dir.chdir "../"
 # 使用shell脚本上传podspec
-system 'pod repo push fmyang FMFramework.podspec'
+system 'pod repo push https://github.com/FMYang/FMPodSpec.git FMFramework.podspec'
 
 end
