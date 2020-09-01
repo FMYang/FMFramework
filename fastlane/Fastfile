@@ -1,7 +1,6 @@
 
 ProjectName="FMFramework"
 ProjectPath="./FMFramework.podspec"
-PodSpecDir="/Users/fmy/zy/FMFramework/FMFramework.podspec"
 
 desc '升级私有库脚本'
 lane :release do |options|
@@ -18,26 +17,22 @@ push_to_git_remote
 
 if git_tag_exists(tag: tagNum)
       # 版本存在，删除对应 tag
-      # remove_git_tag(tag: tagNum)
+      remove_git_tag(tag: tagNum) # plugin
 end
 
+# 打tag
 add_git_tag(
 	tag: tagNum
 )
 
+# 上传tag
 push_git_tags
 
 # pod_lib_lint(allow_warnings: true)
 
+# 返回上一个目录
 Dir.chdir "../"
+# 使用shell脚本上传podspec
 system 'pod repo push fmyang FMFramework.podspec'
 
-end
-
-lane :DirTest do
-	Dir.pwd
-	Dir.chdir "../"
-	sh("pwd")
-	sh("cd ..")
-	sh("ls")
 end
