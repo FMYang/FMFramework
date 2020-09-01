@@ -16,8 +16,8 @@ git_commit(path: ".", message: message)
 push_to_git_remote
 
 if git_tag_exists(tag: tagNum)
-      # 版本存在，删除对应 tag
-      git_remove_tag(tag: tagNum) # plugin
+      # 版本已经存在
+      raise "版本已经存在，请重新提交" 
 end
 
 # 打tag
