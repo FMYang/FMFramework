@@ -26,6 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 // version 6
 + (void)method6;
 
+// version 7
++ (void)method7;
+
 @end
 
 NS_ASSUME_NONNULL_END
