@@ -1,5 +1,6 @@
  # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
+source 'https://github.com/FMYang/FMPodSpec.git'
 
 target 'Example' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -7,6 +8,6 @@ target 'Example' do
 
   # Pods for Example
 #  pod 'FMFramework', :path => '../../FMFramework'
-  pod 'FMFramework', :git => 'https://github.com/FMYang/FMFramework.git', :tag => '0.0.6'
+  pod 'FMFramework', '0.0.7'
 
 end

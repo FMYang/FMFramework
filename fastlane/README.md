@@ -20,9 +20,9 @@ or alternatively using `brew install fastlane`
 fastlane release
 ```
 升级私有库脚本
-### updateSpecVersion
+### DirTest
 ```
-fastlane updateSpecVersion
+fastlane DirTest
 ```
 
 

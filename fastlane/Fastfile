@@ -1,16 +1,13 @@
 
+ProjectName="FMFramework"
 ProjectPath="./FMFramework.podspec"
+PodSpecDir="/Users/fmy/zy/FMPodSpec/FMFramework/"
 
 desc '升级私有库脚本'
 lane :release do |options|
 
 tagNum = options[:tag]
 message = options[:message]
-
-cocoapods(
-  clean_install: true,
-  podfile: "./Example/Podfile"
-)
 
 # 更新spec版本号
 version_bump_podspec(path: ProjectPath, version_number: tagNum)
@@ -32,9 +29,13 @@ push_git_tags
 
 # pod_lib_lint(allow_warnings: true)
 
+`cd ..`
+`pod repo push fmyang FMFramework.podspec`
+
 end
 
-lane :updateSpecVersion do |options|
-	tagNum = options[:tag]
-	version_bump_podspec(path: ProjectPath, version_number: tagNum)
+lane :DirTest do |options|
+	# `pod repo push fmyang FMFramework.podspec`
+	`cd ..`
+	`pod repo push fmyang FMFramework.podspec`
 end

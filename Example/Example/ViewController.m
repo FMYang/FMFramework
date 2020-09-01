@@ -26,8 +26,6 @@
     [FMTestClass method3];
     
     [FMTestClass method4];
-    
-    [FMTestClass method6];
 }
 
 
