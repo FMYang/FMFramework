@@ -21,18 +21,14 @@ if git_tag_exists(tag: tagNum)
 end
 
 # 打tag
-add_git_tag(
-	tag: tagNum
-)
+add_git_tag(tag: tagNum)
 
 # 上传tag
 push_git_tags
 
-# pod_lib_lint(allow_warnings: true)
-
 # 返回上一个目录
 Dir.chdir "../"
 # 使用shell脚本上传podspec
-system 'pod repo push https://github.com/FMYang/FMPodSpec.git FMFramework.podspec'
+system 'pod repo push https://github.com/FMYang/FMPodSpec.git FMFramework.podspec --allow-warnings'
 
 end
