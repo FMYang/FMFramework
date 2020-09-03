@@ -8,6 +8,8 @@ lane :release do |options|
 tagNum = options[:tag]
 message = options[:message]
 
+pod_lib_lint(use_bundle_exec: false)
+
 # 更新spec版本号
 version_bump_podspec(path: ProjectPath, version_number: tagNum)
 
@@ -31,4 +33,8 @@ Dir.chdir "../"
 # 使用shell脚本上传podspec
 system 'pod repo push https://github.com/FMYang/FMPodSpec.git FMFramework.podspec --allow-warnings'
 
+end
+
+lane :test do
+ 
 end

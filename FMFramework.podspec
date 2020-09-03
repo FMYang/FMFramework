@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FMFramework"  # 名字
-  s.version      = "0.0.3"         # 版本号
+  s.version      = "0.0.4"         # 版本号
   s.summary      = "FMFramework" # 简介
   s.description  = "FMFramework test." # 介绍
   s.homepage     = "https://github.com/FMYang/FMFramework.git" # 主页

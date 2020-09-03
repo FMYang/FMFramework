@@ -20,11 +20,6 @@
     // Do any additional setup after loading the view.
     
     [FMTestClass method1];
-    
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Example" withExtension:@"json"];
-    
-    NSLog(@"== path %@", url);
-    
 }
 
 
