@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FMFramework"  # 名字
-  s.version      = "0.0.2"         # 版本号
+  s.version      = "0.0.3"         # 版本号
   s.summary      = "FMFramework" # 简介
   s.description  = "FMFramework test." # 介绍
   s.homepage     = "https://github.com/FMYang/FMFramework.git" # 主页
@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true # 是否使用arc
   
   s.source_files = 'FMFramework/*.{h,m,swift,bundle,json}' # 指定使用的源文件
-  s.resource = 'Test.json'
+  s.resource = 'FMFramework/*.json'
   
 end
