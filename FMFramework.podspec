@@ -12,8 +12,7 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "10.0", } # 指定ios系统，=>8.0表示8.0及以上系统
   s.requires_arc = true # 是否使用arc
   
-  s.source_files = 'FMFramework/*.{h,m,swift}' # 指定使用的源文件
-    
-  # s.dependency "MJRefresh" # 依赖库
+  s.source_files = 'FMFramework/*.{h,m,swift,json}' # 指定使用的源文件
+  s.resource = 'Pod/Resouces/*.json'
   
 end
