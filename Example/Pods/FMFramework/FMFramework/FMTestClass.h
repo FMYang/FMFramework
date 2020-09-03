@@ -14,27 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)method1;
 
-// version 2
-+ (void)method2;
-
-// version 4
-+ (void)method3;
-
-// version 5
-+ (void)method4;
-
-// version 6
-+ (void)method6;
-
-// version 7
-+ (void)method7;
-
-// version 8
-+ (void)method8;
-
-// version 17
-+ (void)method17;
-
 @end
 
 NS_ASSUME_NONNULL_END

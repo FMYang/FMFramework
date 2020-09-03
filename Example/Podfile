@@ -8,6 +8,6 @@ target 'Example' do
 
   # Pods for Example
 #  pod 'FMFramework', :path => '../../FMFramework'
-  pod 'FMFramework', '0.0.17'
+  pod 'FMFramework', '0.0.1'
 
 end

@@ -1,16 +1,16 @@
 PODS:
-  - FMFramework (0.0.17)
+  - FMFramework (0.0.1)
 
 DEPENDENCIES:
-  - FMFramework (= 0.0.17)
+  - FMFramework (= 0.0.1)
 
 SPEC REPOS:
   https://github.com/FMYang/FMPodSpec.git:
     - FMFramework
 
 SPEC CHECKSUMS:
-  FMFramework: fd61be2d2e78d4682f51014428cca54482267a94
+  FMFramework: c12619999ebe2b86b1b28b11b7590d8ac431daa5
 
-PODFILE CHECKSUM: acdbfeb9f13bf1be3dbd4ae147ae1f54133183bb
+PODFILE CHECKSUM: 07655a797332a023c099953cdc3f9cd45196fc56
 
 COCOAPODS: 1.9.2
