@@ -16,6 +16,6 @@
     "ios": "10.0"
   },
   "requires_arc": true,
-  "source_files": "FMFramework/*.{h,m,swift,json}",
-  "resources": "Pod/Resouces/*.json"
+  "source_files": "FMFramework/*.{h,m,swift,bundle,json}",
+  "resources": "Test.json"
 }

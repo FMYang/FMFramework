@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../../FMFramework"
 
 SPEC CHECKSUMS:
-  FMFramework: c230930b5612a60c6fbd7269bf14355a9faadd91
+  FMFramework: 615e5c8bf9675c9a1dd406b77eab42aaf385303e
 
 PODFILE CHECKSUM: 03e5af63001ddfffd48d4aac8a4fb04045e0fdf3
 
